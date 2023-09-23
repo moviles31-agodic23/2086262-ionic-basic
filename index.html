@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket-2086262</title>
     <link rel="Stylesheet" href="estilo.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 </head>
 <body>
-    <div class="Ticket">
-        <h1>========TICKET DE COMPRA========</h1>
-    </div>
-
-    <div class="Contenido">
-        <div class="Columna">
-              <div class="texto">
-              <p1><t1>Artículo: <input type="Text" placeholder="" name="" id="InputArticulo" class="Articulo"> </t1></p1> 
-              <p2><t2>Precio: <input type="Text" placeholder="" name="" id="InputPrecio" class ="Precio"></t2></p2>
-              <button onclick="Insertar()" Id="Total"> Calcular Total</button>
-               </div>
-
-             <div class="Sub">
-                 <h2>======TU TICKET======</h2>
-                 <div id="Product"></div>
-                 <hr>
-                 <p3>Total: </p3><div id="Suma"></div> 
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+              <ion-title>Recrear Ticket-2086262</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <h1>=========TICKET DE COMPRA=========</h1>
+            
+            <div class="fila">
+                <ion-label for="Articulo">Articulo: </ion-label>
+                <ion-input id="Articulo"></ion-input>
             </div>
-        </div>
-    </div>
+
+            <div class="fila">
+                <ion-label for="Precio">Precio: </ion-label>
+                <ion-input id="Precio"></ion-input>
+            </div>
+            
+            <div class="fila">
+                <ion-button onclick="agregarAarreglo()">Calcular Total </ion-button>
+            </div>
+            
+            <h2>=========TU TICKET=========</h2>
+                 
+            
+          </ion-content>
+
+    </ion-app>
+    
     <script src="index.js"></script>
 </body>
 </html>
