@@ -1,0 +1,7 @@
+{
+  "name": "AppMov-2086262",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
